@@ -13,7 +13,7 @@ can_ok($le, 'ca_list');
 can_ok($le, 'ca_supported');
 can_ok($le, 'ca_supported_staging');
 
-ok($le->ca_list() == 5, 'Checking the number of supported CAs');
+ok($le->ca_list() == 6, 'Checking the number of supported CAs');
 ok(!$le->ca_supported('unknown'), 'Checking for unknown CA');
 ok($le->ca_supported('zerossl.com'), 'Checking for the supported CA');
 ok(!$le->ca_supported_staging('zerossl.com'), 'Checking for the supported CA with no staging environment');
